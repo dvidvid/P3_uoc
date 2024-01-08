@@ -1,0 +1,139 @@
+
+*{   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: left;
+}
+
+footer {
+    background-color: rgb(0, 59, 74);
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.indexH2{
+    background: url("../img/hero-image-home.jpg");
+    padding: 5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.introIndex{
+    display: flex;
+    align-items: center;
+}
+
+.twoColumnIndex{
+    display:flex;
+    background-color: aqua;
+}
+
+.twoColumnIndex img{
+    width: 30rem;
+    height: 30rem;
+}
+
+p h3{
+    display:block;
+}
+
+/*------------------------------------------------------------------*/
+
+/* Links configuration*/
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a4f479
+}
+
+.current{
+    color: #a4f479;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+/*------------------------------------------------------------------*/
+
+/* Nav configuration*/
+.navDist{
+    display: flex;   
+    justify-content: space-around;
+    text-align: left;
+}
+
+.navDist .logoImg, footer .footerLogo{
+    margin: 0 0 0 10em;
+}
+
+.navDist ul, footer p{
+    margin: 0 0 0 60em;
+}
+
+footer div{
+    text-align: left;
+    color: white;
+}
+
+footer a{
+    display: inline;
+}
+
+
+nav ul li{
+    display: inline-block;
+}
+
+.navLiFirst, footer a{
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 2px;
+    margin-right: 1em;
+    padding-right: 1em;
+}
+
+.twoColumnIndex div{
+    display: block;
+}
+
+div div img{
+    width: 50em;
+    height: 50em;
+}
+
+
+/* Video page css*/
+.containerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: white;
+}
+
+/****************
+    Blog
+*****************/
+.blogArticle{
+    display: flex;
+    flex-direction: row;
+}
+
+.blogArticle img{
+    width: 15rem;
+    height: 15rem;
+}
+
+/****************************
+Videos responsive del lloc web
+*****************************/
+iframe.video-fluid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: 0;
+}

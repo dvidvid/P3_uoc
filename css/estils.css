@@ -600,7 +600,7 @@ blockquote{
 }
 
 .entradaIntro{
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .entradaPrincipal h2{
@@ -656,6 +656,11 @@ iframe.video-fluid {
 
 .containerGrid .blog:first-child{
     grid-column: span 1;
+}
+
+.containerGrid .blog div{
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 @media (max-width: 1280px) and (min-width: 768px){

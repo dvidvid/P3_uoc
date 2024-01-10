@@ -6,7 +6,7 @@
     text-align: left;
 	font-family:'Lato', 'Noto Serif';
 	font-weight:400;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 article{
@@ -379,7 +379,7 @@ nav a:hover{
     }
     
     .indexH1{
-        font-size: 1em;
+        font-size: 2em;
         padding: 3em;
     }
 

@@ -460,6 +460,38 @@ nav a:hover{
     color: white;
 }
 
+.paginacio{
+    margin-top: 3em;
+    text-align: center;
+}
+
+.paginacio ul{
+    list-style-type: none;
+    display:inline-block;
+}
+
+.paginacio ul li{
+    display:inline-block;
+}
+
+.Actual, .Seguent{
+	text-decoration:none;
+	padding:0.3vw;
+}
+.Actual, .Actual:hover , .Seguent:hover{
+	color:rgb(255,255,255);
+	border:solid 1px rgb(191, 12, 240);
+	background-color:rgb(191, 12, 240);
+	margin-right:1vw;
+}
+
+.Seguent{
+	color:rgb(0, 59, 74);
+	border:solid 1px rgb(0, 59, 74);
+	background-color:rgb(255,255,255);
+	margin-right:1vw;
+}
+
 @media (max-width: 1280px) and (min-width: 768px){
     .blogArticle{
         grid-template-columns: 1fr 1fr;
@@ -677,3 +709,22 @@ iframe.video-fluid {
         grid-template-columns: 1fr;
     }
 }
+
+.Actual, .Seguent{
+	text-decoration:none;
+	padding:0.3vw;
+}
+.Actual, .Actual:hover , .Seguent:hover{
+	color:rgb(255,255,255);
+	border:solid 1px rgb(191, 12, 240);
+	background-color:rgb(191, 12, 240);
+	margin-right:1vw;
+}
+
+.Seguent{
+	color:rgb(0, 59, 74);
+	border:solid 1px rgb(0, 59, 74);
+	background-color:rgb(255,255,255);
+	margin-right:1vw;
+}
+

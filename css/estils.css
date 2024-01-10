@@ -445,7 +445,7 @@ nav a:hover{
     font-size: 0.7em;
 }
 
-.etiquetaBlog1{
+.etiquetaBlog{
     position:absolute;
 	border:none;
     top: 2%;
@@ -455,7 +455,7 @@ nav a:hover{
 	padding:0.5vw;
 }
 
-.etiquetaBlog1:hover{
+.etiquetaBlog:hover{
     background-color:rgb(191, 12, 240);
     color: white;
 }
@@ -494,9 +494,6 @@ Entrada
 
 .entradaPrincipal{
     background-color: white;
-}
-
-.entradaPrincipal{
     padding: 4%;
 }
 
@@ -533,9 +530,6 @@ Entrada
 
 .figEntradaEsquerra{
 	position:relative;
-}
-
-.categoriaGeneral{
 }
 
 .categoriaEntrada{

@@ -4,13 +4,33 @@
     margin-right: auto;
     margin-top: auto;
     text-align: left;
+	font-family:'Lato', 'Noto Serif';
+	font-weight:400;
+    font-size: 1.1rem;
 }
 
 article{
-    background-color: rgb(229, 225, 254);
+    background-color: rgb(247, 247, 247);
     padding: 5vw;
+    padding-top:2vw;
     color: rgb(0, 59, 74);
 }
+
+h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+figure h3{
+    color: rgb(0, 59, 74);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.7vw;
+}
+
+/*****************************
+Footer
+*****************************/
 
 footer {
     background-color: rgb(0, 59, 74);
@@ -19,14 +39,19 @@ footer {
     display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .footerLeft{
     text-align: left;
+    margin-right: 10vw;
+    margin-left: 5vw;
 }
 
 .footerRight{
     text-align: right;
+    margin-right: 5vw;
 }
 
 .footerUl{
@@ -36,6 +61,24 @@ footer {
 .footerUl li{
     display: inline;
 	padding-left: 0.5rem;
+}
+
+.footerLogo{
+    margin: auto;
+    height: auto;
+}
+
+footer a{
+    color: rgb(255, 255, 255);
+    border-bottom: 0px;
+}
+
+footer a:hover{
+    color:rgb(229, 225, 254)
+}
+
+footer a img:hover{
+    opacity: 0.7;
 }
 
 @media (max-width: 1280px) and (min-width: 768px){
@@ -48,13 +91,13 @@ footer {
     .footerLeft{
         text-align: center;
         margin:auto;
-        padding:auto;
+        padding:0;
     }
 
     .footerRight{
         text-align: center;
         margin:auto;
-        padding:auto;
+        padding:0;
     }
 
     .footerUl{
@@ -72,13 +115,13 @@ footer {
     .footerLeft{
         text-align: center;
         margin:auto;
-        padding:auto;
+        padding:0;
     }
 
     .footerRight{
         text-align: center;
         margin:auto;
-        padding:auto;
+        padding:0;
     }
 
     .footerUl{
@@ -87,14 +130,23 @@ footer {
     }
 }
 
-/*------------------------------------------------------------------*/
+/**********
+Peu de fotos
+**********/
+.peuFotos{
+    color: rgb(158, 157, 171);
+    font-size: 0.8em;
+}
 
-/* Links configuration*/
+/******************************
+Links configuration
+******************************/
 
 a{
     text-decoration: none;
     border-bottom: 1px dotted rgb(191, 12, 240);
     color: rgb(191, 12, 240);
+    font-size: inherit;
 }
 
 a:hover{
@@ -102,24 +154,56 @@ a:hover{
     border-bottom: 1px dotted rgb(0, 59, 74);
 }
 
+a h3{
+    color: rgb(0, 59, 74);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.7vw;
+}
 
-/*------------------------------------------------------------------*/
+a h3:hover{
+    color: rgb(191, 12, 240);
+}
 
-/* Nav configuration*/
+/******************
+Nav configuration
+******************/
+
 .navDist{
     display: grid;  
     grid-template-columns: 1fr 1fr; 
-    justify-content: space-around;
     text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.navDist .logoImg, .footerLogo{
-    margin: auto;
-    height: auto;
+.logoImg{
+    border-bottom: 0px;
+    margin-right: 10vw;
+    margin-left: 5vw;
+    border-bottom: 0px;
+}
+
+.logoImg:hover{
+    border-bottom: 0px;
+}
+
+nav{
+    margin-right: 5vw;
 }
 
 nav ul li{
     display: inline-block;
+}
+
+nav a{
+    border-bottom: 0px;
+    color: rgb(0, 59, 74);
+}
+
+nav a:hover{
+    color: rgb(191, 12, 240);
+    border-bottom: 0px;
 }
 
 .navLiFirst{
@@ -130,23 +214,26 @@ nav ul li{
     padding-right: 1em;
 }
 
-div div img{
-    width: 50em;
-    height: 50em;
-}
-
-
 /****************
     Index
 *****************/
 
+.indexActicle{
+    background-color: rgb(229, 225, 254);
+    padding-top: 0;
+    margin-top: 0;
+}
+
 .indexH1{
     background: url("../img/hero-image-home.jpg");
-    padding: 5em;
     background-repeat: no-repeat;
     background-size:100% 100%;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 0; 
+    font-weight: 900;
+    color: rgb(0, 59, 74);
+    font-size: 4em;
+    padding: 4em;
 }
 
 .introGridIndex div{
@@ -171,10 +258,18 @@ div div img{
 }
 
 .divIndex{
-    padding-right:15vw;
-    padding-left:10vw;
-    padding-top:4vw;
-    padding-bottom:4vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+}
+
+.divIndex h2{
+    font-size: 3em;
+}
+
+.boldText{
+    font-weight: 700;
+    font-size: inherit;
 }
 
 .twoColumnIndex div{
@@ -182,6 +277,10 @@ div div img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 25%;
+}
+
+.legalIndex{
+    font-size: 0.7rem;
 }
 
 .twoColumnIndex:nth-child(even){
@@ -206,16 +305,7 @@ div div img{
     text-align: right;
 }
 
-@media (min-width: 1280px){
-    .introGridIndex{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap:5vw;
-    }
-}
-
-@media (max-width: 1280px) and (min-width: 768px){
+@media (max-width: 1200px) and (min-width: 768px){
     .introGridIndex{
         display: block;
     }
@@ -248,6 +338,17 @@ div div img{
         order: 1;
     }
 
+    .divIndex{
+        padding-left: 0vw;
+        padding-right: 0vw;
+        padding-top: 5vw;
+    }
+    
+    .indexH1{
+        font-size: 2em;
+        padding: 4em;
+    }
+
 }
 
 /****************
@@ -261,8 +362,6 @@ div div img{
 .blogTitle:hover{
     color:rgb(191, 12, 240);
 }
-
-
 
 .blogArticle{
     display: grid;
@@ -309,6 +408,7 @@ div div img{
 	padding-top:0.3vw;
 	padding-bottom:0.3vw;
 	font-weight:700;
+    font-size: 0.7em;
 }
 
 .etiquetaBlog1{
@@ -362,7 +462,7 @@ Entrada
     background-color: white;
 }
 
-.entradaGrid div:first-child{
+.entradaPrincipal{
     padding: 4%;
 }
 
@@ -390,11 +490,11 @@ Entrada
 
 .lateral{
     margin-top: 0;
-    background-color: rgb(229, 225, 254);
+    background-color: rgb(247, 247, 247);
 }
 
 .lateral div{
-    background-color: white;
+    background-color:  rgb(247, 247, 247);
 }
 
 .figEntradaEsquerra{
@@ -402,7 +502,6 @@ Entrada
 }
 
 .categoriaGeneral{
-    margin-bottom: 1.5rem;
 }
 
 .categoriaEntrada{
@@ -410,17 +509,40 @@ Entrada
 	background-color:rgb(255, 255, 255);
 	border:solid 1px rgb(0, 59, 74);
 	text-decoration:none;
-	margin-right:0.5rem;
     padding: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 3rem;
 }
 
-.tree{
+.breadCrumb{
     margin-bottom: 2vw;
+    color: rgb(0, 59, 74);
+    border-bottom: 0px;
+}
+
+.breadCrumb:hover{
+    margin-bottom: 2vw;
+    color: rgb(191, 12, 240);
+    border-bottom: 0px;
 }
 
 .entrades{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 1vw;
+}
+
+.entrades div{
+    background-color: white;
+}
+
+.textLateral{
+    padding-left: 1vw;
+}
+
+.textLateral h3{
+    margin-bottom:0.5em;
 }
 
 @media (max-width: 1280px) and (min-width: 768px){
@@ -430,6 +552,10 @@ Entrada
 
     .entrades{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .entrades div{
+        margin-top: 0;
     }
     
 }
@@ -458,7 +584,7 @@ iframe.video-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    background-color: rgb(229, 225, 254);
+    background-color: rgb(247, 247, 247);
     padding-bottom: 4vw;
 }
 
